@@ -63,8 +63,7 @@ namespace GloboTicket.Services.EventCatalog
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapHealthChecks("/health/live", new HealthCheckOptions { Predicate = _ => false }); 
-                endpoints.MapHealthChecks("/health/ready");
+                endpoints.MapDefaultControllerRoute();
                 endpoints.MapControllers();
             });
         }

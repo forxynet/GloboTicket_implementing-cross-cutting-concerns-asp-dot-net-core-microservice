@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.Web", "GloboTicket.Client\GloboTicket.Web.csproj", "{0848F9B8-B1CC-412F-9A8C-A09058575A1E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F3632F51-056C-43C5-9E59-8D371E99C8BF}"
+	ProjectSection(SolutionItems) = preProject
+		GloboTicket.Services.Discount\appsettings.Development.json = GloboTicket.Services.Discount\appsettings.Development.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{825D4E4F-3BFF-4546-96AB-8AB83D95722D}"
 EndProject
@@ -33,9 +36,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.Services.Paymen
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6C9AE2A6-D63D-4044-B523-F9C35D8A64E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.Common", "GloboTicket.Common\GloboTicket.Common.csproj", "{DFD474F4-BDDE-4264-8313-FA427E2B43D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.Common", "GloboTicket.Common\GloboTicket.Common.csproj", "{DFD474F4-BDDE-4264-8313-FA427E2B43D7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GloboTicket.Shared", "GloboTicket.Shared\GloboTicket.Shared.shproj", "{167ED053-917C-4AF3-A439-E89FF8D49F3D}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GloboTicket.Shared\GloboTicket.Shared.projitems*{167ed053-917c-4af3-a439-e89ff8d49f3d}*SharedItemsImports = 13
+		GloboTicket.Shared\GloboTicket.Shared.projitems*{e2c27a67-a664-4501-8045-c71f13924979}*SharedItemsImports = 5
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|iPhone = Debug|iPhone
@@ -193,6 +202,7 @@ Global
 		{08E68C56-A116-430C-A5C3-78797B49C726} = {BEE0F382-1476-489A-9ACA-B4D969B45BDF}
 		{71D77F9F-0A21-4054-BB7C-A9C75062B202} = {F3632F51-056C-43C5-9E59-8D371E99C8BF}
 		{DFD474F4-BDDE-4264-8313-FA427E2B43D7} = {6C9AE2A6-D63D-4044-B523-F9C35D8A64E2}
+		{167ED053-917C-4AF3-A439-E89FF8D49F3D} = {6C9AE2A6-D63D-4044-B523-F9C35D8A64E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57E1B7AE-99E6-4F8F-977C-CF0FD36BBE42}
