@@ -9,6 +9,9 @@
     <Import_RootNamespace>GloboTicket.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AzureServiceBusHealthChack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HealtCheckExtentions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HealthCheckResponses.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HealthCheckRouteBuilderExtensions.cs" />
   </ItemGroup>
 </Project>

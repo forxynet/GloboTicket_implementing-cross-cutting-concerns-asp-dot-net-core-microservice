@@ -13,6 +13,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
 using Microsoft.Extensions.Logging;
+using GloboTicket.Shared;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace GloboTicket.Services.Ordering
 {
@@ -53,6 +55,13 @@ namespace GloboTicket.Services.Ordering
             services.AddSingleton<IAzServiceBusConsumer, AzServiceBusConsumer>();
 
             services.AddControllers();
+
+            services.AddHealthChecks()
+                    .AddAzureServiceBusTopicHealthCheck(Configuration["ServiceBusConnectionString"],
+                       Configuration["OrderPaymentRequestMessageTopic"], "Order Payment Request Topic", HealthStatus.Unhealthy)
+
+                    .AddAzureServiceBusTopicHealthCheck(Configuration["ServiceBusConnectionString"],
+                       Configuration["OrderPaymentUpdatedMessageTopic"],"Order Payment Updated Topic", HealthStatus.Unhealthy);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,6 +90,7 @@ namespace GloboTicket.Services.Ordering
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapDefaultHealthChecks();
                 endpoints.MapControllers();
             });
 

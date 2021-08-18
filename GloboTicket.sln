@@ -42,7 +42,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GloboTicket.Shared", "Globo
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GloboTicket.Shared\GloboTicket.Shared.projitems*{0848f9b8-b1cc-412f-9a8c-a09058575a1e}*SharedItemsImports = 5
 		GloboTicket.Shared\GloboTicket.Shared.projitems*{167ed053-917c-4af3-a439-e89ff8d49f3d}*SharedItemsImports = 13
+		GloboTicket.Shared\GloboTicket.Shared.projitems*{a36462e2-cd8a-4d63-bc2d-e4cdb3313a7c}*SharedItemsImports = 5
 		GloboTicket.Shared\GloboTicket.Shared.projitems*{e2c27a67-a664-4501-8045-c71f13924979}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

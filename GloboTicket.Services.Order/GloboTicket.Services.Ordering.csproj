@@ -27,4 +27,6 @@
 		<ProjectReference Include="..\GloboTicket.Integration.MessagingBus\GloboTicket.Integration.MessagingBus.csproj" />
 	</ItemGroup>
 
+	<Import Project="..\GloboTicket.Shared\GloboTicket.Shared.projitems" Label="Shared" />
+
 </Project>

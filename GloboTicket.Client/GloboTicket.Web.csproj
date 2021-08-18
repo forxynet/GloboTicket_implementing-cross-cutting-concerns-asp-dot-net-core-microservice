@@ -10,11 +10,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="3.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GloboTicket.Common\GloboTicket.Common.csproj" />
-  </ItemGroup> 
+  </ItemGroup>
+
+  <Import Project="..\GloboTicket.Shared\GloboTicket.Shared.projitems" Label="Shared" /> 
 
 </Project>
